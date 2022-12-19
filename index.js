@@ -1,7 +1,14 @@
 import { getRepoLoc, logLocResult, sumAllInfo } from './utils.js';
 
 const owner = 'nautes-tech';
-const repoNames = ['milan', 'tecnoindagini', 'aib-web', 'af-live'];
+const repoNames = [
+  'milan',
+  'tecnoindagini',
+  'aib-web',
+  'af-live',
+  'aim',
+  'teamgroove-web',
+];
 
 const main = async () => {
   const promises = repoNames.map((repo) => getRepoLoc(owner, repo));
